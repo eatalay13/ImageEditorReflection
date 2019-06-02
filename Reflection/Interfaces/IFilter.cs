@@ -11,5 +11,6 @@ namespace Reflection.Interfaces
     {
         string Name { get; }
         Image RunPlugin(Image src);
+        Task<Image> RunPluginAsync(Image src);
     }
 }
