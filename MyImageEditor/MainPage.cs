@@ -1,10 +1,10 @@
-﻿using System;
+﻿using Reflection.Interfaces;
+using Reflection.Managers;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
-using Reflection.Interfaces;
-using Reflection.Managers;
 
 namespace MyImageEditor
 {
@@ -37,7 +37,7 @@ namespace MyImageEditor
             }
         }
 
-        private void menuItem_Click(object sender, EventArgs e)
+        private async void menuItem_Click(object sender, EventArgs e)
         {
             if (sender is ToolStripMenuItem menuItem)
             {
@@ -46,7 +46,7 @@ namespace MyImageEditor
                 try
                 {
                     Cursor = Cursors.WaitCursor;
-                    pictureBox1.Image = filter.RunPlugin(pictureBox1.Image);
+                    pictureBox1.Image = await filter.RunPluginAsync(pictureBox1.Image);
                 }
                 catch (Exception exception)
                 {

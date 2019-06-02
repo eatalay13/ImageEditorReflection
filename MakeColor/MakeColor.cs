@@ -1,11 +1,17 @@
 ﻿using Reflection.Interfaces;
 using System.Drawing;
+using System.Threading.Tasks;
 
 namespace MakeColor
 {
     public class MakeRed : IFilter
     {
         public Image RunPlugin(Image src)
+        {
+            return ApplyPlugin(src);
+        }
+
+        private static Image ApplyPlugin(Image src)
         {
             Bitmap bitmap = new Bitmap(src);
             for (int row = 0; row < bitmap.Height; ++row)
@@ -17,11 +23,17 @@ namespace MakeColor
                     {
                         color = Color.FromArgb(color.A, 255, color.G, color.B);
                     }
+
                     bitmap.SetPixel(col, row, color);
                 }
-
             }
+
             return bitmap;
+        }
+
+        public Task<Image> RunPluginAsync(Image src)
+        {
+            return Task.Run(() => ApplyPlugin(src));
         }
 
         public string Name => "Make Red";
@@ -30,6 +42,16 @@ namespace MakeColor
     public class MakeGreen : IFilter
     {
         public Image RunPlugin(Image src)
+        {
+            return ApplyPlugin(src);
+        }
+
+        public Task<Image> RunPluginAsync(Image src)
+        {
+            return Task.Run(() => ApplyPlugin(src));
+        }
+
+        private static Image ApplyPlugin(Image src)
         {
             Bitmap bitmap = new Bitmap(src);
             for (int row = 0; row < bitmap.Height; ++row)
@@ -41,10 +63,11 @@ namespace MakeColor
                     {
                         color = Color.FromArgb(color.A, color.R, 255, color.B);
                     }
+
                     bitmap.SetPixel(col, row, color);
                 }
-
             }
+
             return bitmap;
         }
 
@@ -54,6 +77,16 @@ namespace MakeColor
     public class MakeBlue : IFilter
     {
         public Image RunPlugin(Image src)
+        {
+            return ApplyPlugin(src);
+        }
+
+        public Task<Image> RunPluginAsync(Image src)
+        {
+            return Task.Run(() => ApplyPlugin(src));
+        }
+
+        private static Image ApplyPlugin(Image src)
         {
             Bitmap bitmap = new Bitmap(src);
             for (int row = 0; row < bitmap.Height; ++row)
@@ -65,10 +98,11 @@ namespace MakeColor
                     {
                         color = Color.FromArgb(color.A, color.R, color.G, 255);
                     }
+
                     bitmap.SetPixel(col, row, color);
                 }
-
             }
+
             return bitmap;
         }
 
