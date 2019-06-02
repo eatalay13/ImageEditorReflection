@@ -85,6 +85,14 @@
     <None Include="Resources\lightbox-01.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FlipImage\FlipImage.csproj">
+      <Project>{9341ba35-fb17-4750-b952-e25203a80ad5}</Project>
+      <Name>FlipImage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MakeColor\MakeColor.csproj">
+      <Project>{303ba1c1-465d-4af4-85db-a27b2fb7ef71}</Project>
+      <Name>MakeColor</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Reflection\Reflection.csproj">
       <Project>{b338ca08-f1c4-486b-8a03-3d263198005c}</Project>
       <Name>Reflection</Name>

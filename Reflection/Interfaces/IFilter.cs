@@ -10,6 +10,6 @@ namespace Reflection.Interfaces
     public interface IFilter
     {
         string Name { get; }
-        Image RunPlugin(Image image);
+        Image RunPlugin(Image src);
     }
 }
