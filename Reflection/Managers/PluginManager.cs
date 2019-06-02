@@ -9,7 +9,7 @@ namespace Reflection.Managers
     public class PluginManager : IPluginService
     {
         private readonly Dictionary<string, IFilter> _filters = new Dictionary<string, IFilter>();
-
+        
         public Dictionary<string, IFilter> LoadFilters(string folder)
         {
             _filters.Clear();

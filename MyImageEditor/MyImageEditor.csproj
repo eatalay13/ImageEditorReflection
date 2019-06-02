@@ -84,5 +84,11 @@
     <None Include="Resources\10.jpg" />
     <None Include="Resources\lightbox-01.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Reflection\Reflection.csproj">
+      <Project>{b338ca08-f1c4-486b-8a03-3d263198005c}</Project>
+      <Name>Reflection</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
