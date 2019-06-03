@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlipImage", "FlipImage\Flip
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MakeColor", "MakeColor\MakeColor.csproj", "{303BA1C1-465D-4AF4-85DB-A27B2FB7EF71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CropImage", "CropImage\CropImage.csproj", "{0690A740-3A76-430A-A39A-21DD356E783A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{303BA1C1-465D-4AF4-85DB-A27B2FB7EF71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{303BA1C1-465D-4AF4-85DB-A27B2FB7EF71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{303BA1C1-465D-4AF4-85DB-A27B2FB7EF71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0690A740-3A76-430A-A39A-21DD356E783A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0690A740-3A76-430A-A39A-21DD356E783A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0690A740-3A76-430A-A39A-21DD356E783A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0690A740-3A76-430A-A39A-21DD356E783A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +48,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{9341BA35-FB17-4750-B952-E25203A80AD5} = {5A8FA153-5AA6-4960-BFA3-170F16BB49F6}
 		{303BA1C1-465D-4AF4-85DB-A27B2FB7EF71} = {5A8FA153-5AA6-4960-BFA3-170F16BB49F6}
+		{0690A740-3A76-430A-A39A-21DD356E783A} = {5A8FA153-5AA6-4960-BFA3-170F16BB49F6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1562200D-E891-456D-A925-3B8A14DE0BA5}

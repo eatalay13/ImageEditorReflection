@@ -85,6 +85,10 @@
     <None Include="Resources\lightbox-01.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CropImage\CropImage.csproj">
+      <Project>{0690a740-3a76-430a-a39a-21dd356e783a}</Project>
+      <Name>CropImage</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FlipImage\FlipImage.csproj">
       <Project>{9341ba35-fb17-4750-b952-e25203a80ad5}</Project>
       <Name>FlipImage</Name>
